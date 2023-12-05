@@ -2,6 +2,7 @@ import './Todos.css'
 import TodoItems from '../todoItems/TodoItems'
 
 const Todos = ({ todos, deleteTodo }) => {
+	// console.log(todos)
 	return (
 		<>
 			{todos &&
@@ -9,13 +10,13 @@ const Todos = ({ todos, deleteTodo }) => {
 					return (
 						<TodoItems
 							key={item.id}
+							title={item.title}
 							id={item.id}
-							name={item.name}
 							deleteTodo={deleteTodo}
 						/>
 					)
 				})}
-			<h3>{todos.length === 0 ? 'No Todo' : ''}</h3>
+			<h3>{todos.length === 0 ? 'No Todo' : null}</h3>
 		</>
 	)
 }
