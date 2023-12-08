@@ -1,0 +1,37 @@
+.update-todo {
+	height: 50px;
+	border-radius: 20px;
+	background: #d9d9d9;
+	display: flex;
+	margin-top: 20px;
+}
+.update-todo input {
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+	background: #d9d9d9;
+	border: 0;
+	outline: none;
+	padding: 20px;
+	font-size: 20px;
+}
+.update-todo .btn {
+	width: 150px;
+	height: 100%;
+	border-radius: 20px;
+	color: #fff;
+	font-family: Racing Sans One;
+	font-size: 25px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	border: none;
+	cursor: pointer;
+}
+
+.update-todo .btn-update {
+	background-color: green;
+}
+.update-todo .btn-cancel {
+	background-color: red;
+}
